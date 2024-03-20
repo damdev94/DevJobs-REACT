@@ -1,0 +1,101 @@
+.filterWindow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.filterWindows-inner {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 80%;
+}
+
+.filterWindows-inner img {
+    width: 10px;
+}
+
+.filterWindows-inner hr {
+    opacity: 0.3;
+    margin: 30px 0;
+}
+
+.input-location-filter {
+    padding-left: 10px;
+    color: #19202D;
+    border: none;
+    height: 40px;
+    width: 60%;
+}
+
+.input-location-filter:focus {
+    outline: none;
+}
+
+.full-time-only .custom-input {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .full-time-only .custom-input input {
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .full-time-only label {
+    display: flex;
+    align-items: center;
+    color: #19202D;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .full-time-only .custom-input .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #979797;
+    border-radius: 2px;
+    margin-right: 10px; /* Espacement entre la pseudo-checkbox et le texte */
+  }
+  
+  .full-time-only .custom-input input:checked + label .checkmark {
+    background-color: #5964E0;
+  }
+
+  .btn-pop-up p {
+    margin: 0;
+  }
+  .btn-pop-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 35px;
+    text-align: center;
+    background-color: #5964E0;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px auto auto;
+  }
+
+  #dark {
+    .filterWindows-inner, .filterWindows-inner input {
+      background-color: #19202D;
+      color: #fff;
+    }
+    .filterWindows-inner label {
+      color: #fff;
+    }
+  }

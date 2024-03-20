@@ -1,0 +1,90 @@
+.job-container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 80%;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .job-container-header * {
+    margin: 0;
+  }
+
+  .job-container-header img {
+    width: 30px;
+    height: 15px;
+    padding: 20px 10px;
+    border-radius: 20px;
+    position: relative;
+    top: -25px;
+    background-color: orange;
+  }
+
+  .job-container-header h1 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .job-container-header p {
+    color: #6E8098;
+  }
+
+  .btn-company-site {
+    margin: 30px auto 40px auto;
+    background-color: #dce0f2;
+    padding: 15px 25px;
+    border-radius: 10px;
+    color: #5964E0;
+    font-weight: bolder;
+  }
+
+  .main-description-container {
+    background-color: #fff;
+    width: 80%;
+    margin: 250px auto 0 auto;
+    border-radius: 10px;
+    box-shadow: 1px 2px 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .main-description-container-content {
+    padding: 0 20px;
+  }
+
+  .btn-apply-now {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 35px;
+    text-align: center;
+    background-color: #5964E0;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 50px auto 30px auto;
+  }
+
+#dark {
+  .job-container-header, .main-description-container-content{
+    background-color: #19202D;
+  }
+
+  .job-container-header h1{
+    color: #fff;
+  }
+  .btn-company-site {
+    background-color: #191e46;
+  }
+
+  .main-description-container-content {
+    color: #9DAEC2;
+  }
+
+  .main-description-container-content h2{
+    color: #fff;
+  }
+}
