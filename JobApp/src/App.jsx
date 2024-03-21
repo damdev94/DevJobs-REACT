@@ -1,4 +1,4 @@
-import { useState, createContext } from 'react'
+import { useState, createContext, useEffect } from 'react'
 import './App.css'
 import data from './assets/data/data.json'
 import Header from './components/header/header'
@@ -35,8 +35,6 @@ const logos = [
   {typemaster: Typemaster},
   {vector: Vector}
 ]
-
-
 
 export const ThemeContext = createContext(null)
 
@@ -81,6 +79,20 @@ function App() {
     }
   }
 
+  const allDataFilter = () => {
+    if (filterWindowsCheckbox) {
+      const results = data.filter(item => 
+        item.location.toLowerCase().includes(inputLocationValue.toLowerCase()) && item.contract.toLowerCase().includes('full') &&  item.position.toLowerCase().includes(inputValue.toLowerCase())
+        );
+        setJobs(results);
+  } else {
+    const results = data.filter(item => 
+      item.location.toLowerCase().includes(inputLocationValue.toLowerCase()) && item.position.toLowerCase().includes(inputValue.toLowerCase())
+      );
+      setJobs(results);
+  }
+}
+
   const changeInputLocationValue = (e) => {
     setInputLocationValue(e)
   }
@@ -103,7 +115,6 @@ function App() {
   
   const handleToggleButton = () => {
     toggleButton === '' ? setToggleButton('active') : setToggleButton('')
-
   }
 
   return (
@@ -127,6 +138,7 @@ function App() {
                   theme = {theme}
                   handleToggleButton= {handleToggleButton}
                   toggleButton= {toggleButton}
+                  allDataFilter= {allDataFilter}
                   >
                 </Header>
                 <MainContent jobs= {jobs} />

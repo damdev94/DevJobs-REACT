@@ -3,10 +3,14 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
     font-family: "Kumbh Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
+}
+
+.App {
+    min-height: 100vh;
+    height: 100%;
 }
 
 #root {
@@ -43,6 +47,24 @@ body {
     padding: 0 10px;
 }
 
+.btn:hover, .btn-pop-up:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+
 #dark {
         background-color: #0c0f13;
 }
+
+@media only screen and (min-width: 768px) {
+    .header {
+        background-image: url(./assets/tablet/bg-pattern-header.svg);
+        background-size: cover;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .header {
+        background-image: url(./assets/desktop/bg-pattern-header.svg)
+    }
+  }

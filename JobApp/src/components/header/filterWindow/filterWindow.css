@@ -42,7 +42,6 @@
 .full-time-only .custom-input {
     display: inline-flex;
     align-items: center;
-    cursor: pointer;
   }
   
   .full-time-only .custom-input input {

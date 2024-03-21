@@ -16,7 +16,8 @@ function header({
   toggleTheme,
   theme,
   handleToggleButton,
-  toggleButton
+  toggleButton,
+  allDataFilter
   }) {
 
   const displayPopUp = () => {
@@ -48,6 +49,9 @@ function header({
           DataNameFilter= {DataNameFilter}
           DataLocationFilter= {DataLocationFilter}
           unchekedCheckbox= {unchekedCheckbox}
+          changeInputLocationValue= {changeInputLocationValue}
+          changefilterWindowsCheckbox= {changefilterWindowsCheckbox}
+          allDataFilter= {allDataFilter}
         />
         {displayPopUp()}
     </div>

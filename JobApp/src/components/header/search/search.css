@@ -39,3 +39,86 @@
         color: #fff;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    .search {
+        width: 90%;
+        padding: 0 20px;
+    }
+
+    .search * {
+        display: flex;
+        position: relative;
+        width: 32%;
+    }
+
+    .search > div:nth-child(1), .filterWindows-inner > div:nth-child(2) {
+        position: relative;
+    }
+
+    .search > div:nth-child(1)::after, .search > div:nth-child(2)::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background-color: #6E8098;
+        opacity: 0.3;
+    }
+
+    .search-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    #fullTimeCheckbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    .custom-input .btn-pop-up {
+        width: 60px ;
+        height: 20px ;
+        margin: 0;
+        text-align: center;
+    }
+
+    .custom-input {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .custom-input div {
+        width: 100%;
+        display: flex;
+    }
+
+    .custom-input div label {
+        width: 100px ;
+    }
+
+    #dark {
+        .search-icon {
+            background-color: #19202D;
+        } 
+
+        .full-time-only label {
+            color: #fff;
+        }
+        
+        .input-location-filter:focus {
+            background-color: #19202D;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .custom-input .btn-pop-up {
+        width: 150px ;
+        height: 20px ;    
+    }
+    .search {
+        width: 70%;
+    }
+  }

@@ -7,7 +7,7 @@ function MainContent({jobs}) {
 
   const displayCards = () => {
     return jobs.map(job => (
-      <Link key={job.id} to={`/${job.id}`} style={{ textDecoration: 'none' }}>
+      <Link key={job.id} to={`/${job.id}`} style={{ textDecoration: 'none' }} className='link-card-container'>
         <Card 
           key={job.id}
           contract={job.contract}

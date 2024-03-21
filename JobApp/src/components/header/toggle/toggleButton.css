@@ -9,6 +9,7 @@
     border-radius: 5rem;
     transition: background-color .2s;
     box-shadow: 0 0 15px #0000001e;
+    transition: .3s;
 }
 .inputToggle::after {
     content: '';
@@ -24,4 +25,8 @@
 }
 .inputToggle.active::after{
    left: 70%; 
+}
+
+.inputToggle:hover {
+    transform: scale(1.1);
 }

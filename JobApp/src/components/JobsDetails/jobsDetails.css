@@ -41,6 +41,10 @@
     font-weight: bolder;
   }
 
+  .btn-company-site:hover {
+    cursor: pointer;
+  }
+
   .main-description-container {
     background-color: #fff;
     width: 80%;
@@ -50,7 +54,7 @@
   }
 
   .main-description-container-content {
-    padding: 0 20px;
+    padding: 20px;
   }
 
   .btn-apply-now {
@@ -66,6 +70,11 @@
     padding: 10px 20px;
     border-radius: 5px;
     margin: 50px auto 30px auto;
+  }
+
+  .btn-apply-now:hover {
+    cursor: pointer;
+    opacity: 0.7;
   }
 
 #dark {
@@ -86,5 +95,42 @@
 
   .main-description-container-content h2{
     color: #fff;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .job-container-header {
+    flex-direction: row;
+    height: 150px;
+    justify-content: space-between;
+  }
+
+  .job-container-header img {
+    position: initial;
+    width: 10%;
+    padding: 0;
+    border-radius: 0;
+    padding: 68px 30px;
+  }
+
+  .btn-company-site {
+    margin: 0 30px 0 0;
+  }
+
+  .main-description-container {
+    margin: 150px auto 0 auto;
+  }
+
+  .main-description-container-content {
+    padding: 20px 70px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .job-container-header {
+    width: 60%;
+  }
+  .main-description-container {
+    width: 60% ;
   }
 }
